@@ -1,0 +1,94 @@
+/** 상단 영역 **/
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: beige;
+}
+.headerContent {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+.headerLogo {
+  width: 270px;
+  height: 30px;
+  background: url(images/top_logo.PNG) no-repeat left center;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav ul li + li {
+  margin-left: 30px;
+}
+
+/** 메인 영역 **/
+.main {
+  min-height: calc(100vh - 180px);
+}
+
+/** 하단 FOOTER 영역 **/
+.footer {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  margin-top: auto;
+}
+.bottom {
+  width: 100%;
+  display: flex;
+  color: #999;
+}
+.footerTitle {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* 게시판 */
+.page_bbs_list {
+  width: 100%;
+  border-style: hidden;
+  border-collapse: collapse;
+  border: 0;
+  table-layout: fixed;
+}
+.page_bbs_list th,
+.page_bbs_list td {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  border-bottom: solid 1px #ddd;
+}
+.page_bbs_list thead th {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  height: 52px;
+  border-top: solid 2px #a6a6a6;
+  border-bottom: solid 1px #ddd;
+  background: #f5f5f5;
+}
+.page_bbs_list tbody td {
+  height: 51px;
+}
+.page_bbs_list tbody tr:first-child th,
+.page_bbs_list tbody tr:first-child td {
+  border-top: solid 1px #ddd;
+}
+.page_bbs_list .list_title {
+  display: inline-block;
+  width: auto;
+  max-width: 90%;
+  height: 25px;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  float: left;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+ 게시판(공지사항) Mapper
+ -->
+<mapper namespace="com.example.demo.moongproject.mapper.NoticeMapper">
+
+    <!-- 관리 목록 조회 -->
+    <select id="selectLatelyList" resultType="com.example.demo.moongproject.model.TbNotice">
+        <![CDATA[
+            SELECT NOTI.NOTICENO
+                 , NOTI.TITLE
+                 , NOTI.CODE
+                 , NOTI.WRITER
+                 , NOTI.CONTENT
+                 , NOTI.HIT
+                 , NOTI.WRITEDATE
+            FROM   NOTICE NOTI
+            WHERE  1 = 1
+        ]]>
+    </select>
+
+</mapper>
